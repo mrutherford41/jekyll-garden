@@ -1,0 +1,15 @@
+---
+layout: mydefault
+title: test
+---
+
+<h1>All Posts (recent- oldest)</h1>
+
+<div class="posts-wrapper">
+{% for post in site.posts %}
+<article class="posts-article">
+	<a href="{{ post.url }}" class="posts-link">{{ post.title }}</a>
+	<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="posts-time">{{ post.date | date_to_long_string }}</time>
+</article>
+{% endfor %}
+</div>

@@ -1,0 +1,18 @@
+---
+layout: mydefault
+title: Heart
+permalink: /heart
+---
+
+<h1>Heart (Posts)</h1>
+<p>a place for expressing matters of the heart</p>
+
+<div class="posts-wrapper">
+{% for post in site.categories.heart %}
+ <li class="list-item" style="list-style: none;">
+ 	<a href="{{ post.url }}" class="posts-link">{{ post.title }}</a>
+ 	<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="posts-time">{{ post.date | date_to_long_string }}</time> 
+ </li>
+{% endfor %}
+</div>
+

@@ -1,0 +1,19 @@
+---
+layout: mydefault
+title: Mind
+permalink: /mind
+---
+
+<h1>Mind (Posts)</h1>
+<p>a place for sharing knowledge including learning about programming, works in progress, random tidbits of knowledge, etc.</p>
+
+<div class="posts-wrapper">
+{% for post in site.categories.mind %}
+ <li class="list-item" style="list-style: none;">
+ 	<a href="{{ post.url }}" class="posts-link">{{ post.title }}</a>
+ 	<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="posts-time">{{ post.date | date_to_long_string }}</time>
+ </li>
+{% endfor %}
+</div>
+
+

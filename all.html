@@ -1,0 +1,29 @@
+---
+layout: mydefault
+title: All
+---
+
+<div class="all-wrapper">
+<h1>All Posts (recent - oldest)</h1>
+<article>
+	{% for post in site.posts %}
+		<li class="list-item">
+			<a href="{{ post.url }}" style="margin-right: 10px;">{{ post.title }}</a>
+			<time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+		</li>
+	{% endfor %}
+</article>
+
+<h1>Categories</h1>
+{% for category in site.categories %}
+	<p> {{category|first}} </p>
+{% endfor %}
+
+<h1>Socials</h1>
+<a href="https://www.twitter.com/{{ site.twitter_username | cgi_escape | escape }}">Twitter</a>
+
+<h1>Interests</h1>
+<p>Reading</p>
+<p>Music</p>
+<p>Film/TV</p>
+</div>

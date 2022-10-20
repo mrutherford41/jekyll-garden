@@ -1,0 +1,9 @@
+<section style="padding:  50px 0px; text-align: center; position: absolute; width: 100%; padding: 100px 0;">
+	<div style="background: rgb(110,119,238);
+	background: linear-gradient(113deg, rgba(110,119,238,0.8491879350348028) 0%, rgba(159,52,251,0.9976191160057774) 72%); position: absolute; inset: 0; z-index: -1; opacity: 100%;"></div>
+	<div style="z-index: 20;">
+		<h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+		<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">({%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }})</time>
+	</div>
+</section>

@@ -1,0 +1,4 @@
+<ul class="social-list">
+  {%- if site.twitter_username -%}<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><fa class="svg fa fa-twitter"></fa></a></li>{%- endif -%}
+  {%- if site.youtube_username -%}<li><a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><fa class="svg fa fa-youtube-play"></a></li>{%- endif -%}
+</ul>

@@ -1,0 +1,59 @@
+---
+layout: mydefault
+title: Categories
+---
+
+<div style="display: none;">
+    <h2 style="margin: 0;">Mind</h2>
+    <p style="margin-bottom: 20px;">a place for sharing knowledge including learning about programming, works in progress, random tidbits of knowledge, etc.</p>
+    <div class="mind-grid">
+        <div class="mind-griditem">
+            <div class="mind-griditem--back"></div>
+            <a href="/mind" class="mind-griditem--btn">Posts</a>
+        </div>
+        <div class="mind-griditem">
+            <div class="mind-griditem--back"></div>
+            <a href="#" class="mind-griditem--btn">Projects</a>
+        </div>   
+    </div>
+</div>
+
+<div style="margin-top: 60px; display: none;">
+    <h2 style="margin: 0;">Heart</h2>
+    <p style="margin-bottom: 20px;">a place for expressing matters of the heart</p>
+    <div class="mind-grid">
+        <div class="mind-griditem">
+            <div class="mind-griditem--back" style=" background: rgb(255,49,49);
+background: linear-gradient(113deg, rgba(255,49,49,1) 0%, rgba(251,239,52,0.9976191160057774) 100%); "></div>
+            <a href="/heart" class="mind-griditem--btn">Posts</a>
+        </div>
+        <div class="mind-griditem">
+            <div class="mind-griditem--back" style=" background: rgb(255,85,160);
+background: linear-gradient(113deg, rgba(255,85,160,1) 0%, rgba(251,202,52,0.9976191160057774) 100%); "></div>
+            <a href="#" class="mind-griditem--btn">Projects</a>
+        </div>   
+    </div>
+</div>
+
+<div style="margin-top: 50px;">
+    <h1>Categories</h1>
+</div>
+<div style="margin-top:  40px; display: grid; grid-template-columns: repeat(1, 1fr); gap: 10px;">
+    <div style="position: relative; padding: 20px; border-radius: 10px; overflow: hidden;">
+        <div style="background: rgb(110,119,238); background: linear-gradient(113deg, rgba(110,119,238,0.8491879350348028) 0%, rgba(159,52,251,0.9976191160057774) 72%); position: absolute; inset: 0; z-index: -1; opacity: 80%;"></div>
+        <a href="/mind" style="position: absolute; inset: 0;"></a>
+        <div>
+            <h2>Mind</h2>
+            <p style="margin: 0; font-size: 13px;">a place for sharing knowledge including learning about programming, works in progress, random tidbits of knowledge, etc.</p>
+        </div>
+    </div>
+
+    <div style="position: relative; padding: 20px; border-radius: 10px; overflow: hidden;">
+        <div style="background: rgb(110,119,238); background: rgb(255,49,49); background: linear-gradient(113deg, rgba(255,49,49,1) 0%, rgba(251,239,52,0.9976191160057774) 100%); position: absolute; inset: 0; z-index: -1; opacity: 80%;"></div>
+        <a href="/heart" style="position: absolute; inset: 0; opacity: 50%;"></a>
+        <div>
+            <h2>Heart</h2>
+            <p style="margin: 0; font-size: 13px;">a place for expressing matters of the heart</p>
+        </div>
+    </div>
+</div>

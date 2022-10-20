@@ -1,0 +1,366 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "{{ site.theme }}";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+body {
+	/*charcoal background
+	background: #36454F;
+	*/
+	font-family: 'Quantico', sans-serif;
+
+	letter-spacing: 1.2px;
+	line-height: 30px;
+
+	position: relative;
+}
+
+//Header Grid
+.site-header {
+	border: none;
+	z-index: 20;
+
+	width: 100%;
+}
+
+.header-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	justify-content: center;
+	align-items: center;
+
+	padding: 10px 5px;
+}
+
+
+//---Site Header Modifications
+//Move nav links to left
+
+.page-link {
+	position: relative;
+	padding: 5px 10px;
+}
+
+
+//Show background color on hover
+/*
+.page-link:before {
+	content: '';
+	position: absolute;
+
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+
+	opacity: 0%;
+
+	background: lightgreen;
+	box-shadow: 2px 2px 3px 0px lawngreen;
+	border-radius: 5px;
+
+	z-index: -1;
+
+	transition: opacity .5s ease;
+}
+
+.page-link:hover:before {
+	opacity: 100%;
+}
+*/
+
+//Social Media List
+
+.social-list {
+
+	margin:0;
+	padding: 0;
+
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+	gap: 5px;
+}
+
+.social-list li {
+	list-style: none;
+
+	padding: 5px 0px;
+}
+
+.social-list a {
+	padding: 0px 5px;
+
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+
+	font-size: 25px;
+
+	color: black;
+}
+
+.social-list a:hover {
+	text-decoration: none;
+}
+
+
+//posts.html
+
+.posts-wrapper {
+	background: rgb(174,255,166);
+	background: linear-gradient(113deg, rgba(174,255,166,1) 0%, rgba(52,213,251,0.9976191160057774) 100%);  
+
+	padding: 40px 20px; 
+	box-shadow: -3px 3px 5px 0px powderblue; 
+	border-radius: 10px;
+}
+
+.posts-article {
+	padding: 5px 0px;
+}
+
+.posts-link {
+	font-size: 18px; 
+	margin-right: 10px; 
+	background: white;
+}
+
+.posts-time {
+	font-size: 15px;
+}
+
+//index.html
+.home-wrapper {
+	padding: 40px 30px; 
+	margin: 30px 0; 
+
+	background: rgb(174,255,166);
+	background: linear-gradient(113deg, rgba(174,255,166,1) 0%, rgba(52,213,251,0.9976191160057774) 100%);  
+	border-radius: 5px; 
+	margin-bottom: 50px; 
+	box-shadow: -2px 2px 10px 0px lightblue;
+}
+
+.home-wrapper p {
+	margin: 15px 0px;
+	display: inline-block;
+}
+
+//all.html
+.all-wrapper {
+	
+}
+
+.all-wrapper h1 {
+	margin: 2px 0 2px 0;
+}
+
+.all-wrapper p {
+	margin: 5px 0px;
+}
+
+
+//----------
+.body-wrapper {
+
+}
+
+.post-imgwrapper {
+	height: 30vh;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.post-imgwrapper:before {
+	content: '';
+	position: absolute;
+	inset: 0;
+
+	background: url(/assets/images/rodion-kutsaiev-pVoEPpLw818-unsplash.jpg) no-repeat center;
+	background-size: cover;	
+	background-attachment: fixed;
+
+	opacity: 40%;
+}
+
+.post-categorybtn {
+	background: green; 
+	color: white; 
+	
+	box-shadow: 3px 3px 3px 0px black; 
+	border-radius: 5px;   
+	
+	text-align: center;
+
+	padding: 5px 10px;
+	margin-top: 35px;
+}
+
+.post-categorybtn:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.post-header {
+	margin: 40px 0px 0px 0px;
+	text-align: center;
+}
+
+.post-title {
+	font-size: 35px;
+	padding-bottom: 10px;
+}
+
+.post-content {
+	position: relative;
+
+	padding: 50px 0;
+}
+
+.post-content:before {
+	display: none;
+	content: '';
+	position: absolute;
+	background: gold;
+
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px palegoldenrod;
+
+	height: 100%;
+	margin: auto;
+
+	left: -10%;
+	right: -10%;
+	top: -10%;
+	bottom: -10%;
+
+	z-index: -1;
+}
+
+.page-content {
+	margin: 0;
+	padding: 0;
+}
+
+
+.postdefault-body {
+	 background: white;
+}
+
+
+.dt-published {
+	font-size: 15px;
+}
+
+.post-title {
+	margin: 0;
+}
+
+.list-item {
+	margin: 2px 0px;
+	padding: 2px 0px;
+}
+
+.posts-link {
+	display: inline-block;
+	padding: 0px 5px;
+
+	color: black;
+}
+
+.posts-time {
+	font-size: 14px;
+}
+
+.postdefault-content {
+	padding: 200px 0px;
+}
+
+
+.body-wrapper {
+	padding: 10px;
+}
+
+// Categories Page
+.mind-grid {
+	display: grid; 
+	grid-template-columns: repeat(2, 1fr); 
+	gap: 10px;
+}
+
+.mind-griditem {
+	border-radius: 5px; 
+	padding: 50px 10px; 
+	position: relative; 
+	overflow: hidden; 
+}
+
+
+.mind-griditem--back {
+	position: absolute; 
+
+	background: rgb(110,119,238);
+	background: linear-gradient(113deg, rgba(110,119,238,0.8491879350348028) 0%, rgba(159,52,251,0.9976191160057774) 72%); 
+	inset: 0; 
+	
+	opacity: 100%; 
+	z-index: 10;
+
+	transition: opacity .5s ease;
+
+}
+
+.mind-griditem:hover .mind-griditem--back {
+	opacity: 80%;
+}
+
+.mind-griditem--btn {
+	position: absolute;
+	inset: 0;
+
+	z-index: 20;
+
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+
+	color: white;
+}
+
+//padding on sides for small screens
+@media(max-width: 600px){
+	.page-content {
+		text-align: center;
+		padding: 40px 30px;
+	}
+
+	.body-wrapper {
+		padding: 0px;
+	}
+
+	.posts-link {
+		display: block;
+	}
+
+	.mind-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+
+footer {
+	position: relative;
+}

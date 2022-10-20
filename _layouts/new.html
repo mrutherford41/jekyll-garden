@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+<body>
+<div style="background: rgb(55,234,255); background: linear-gradient(113deg, rgba(55,234,255,1) 0%, rgba(255,253,84,0.9976191160057774) 100%); ">
+{%- include myheader.html -%}
+<section class="wrapper" style="padding: 100px 0px; position: relative;">
+<h1 style="position: relative; z-index: 20;">{{ page.title }}</h1>
+<div style="position: absolute; width: 80%; border: 5px solid white; bottom: 0%; top:  0%; height:  0; margin:  auto; z-index: 0;"></div>
+</section>
+</div>
+<main>
+<section class="wrapper" style="padding: 50px 0px;">
+{{content}}
+<div style="margin: 50px 0px 100px 0px;">
+	<p>Category: {{page.category}}</p>
+	<p>Date: <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}</time></p>
+</div>
+</section>
+</main>
+{%- include myfooter.html -%}
+</body>
+</html>
