@@ -20,7 +20,7 @@
 
 title: awarmplace.creates
 # email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: 
   a place for my thoughts and ventures | my digital garden
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.awarmplacecreates.com" # the base hostname & protocol for your site, e.g. http://example.com
