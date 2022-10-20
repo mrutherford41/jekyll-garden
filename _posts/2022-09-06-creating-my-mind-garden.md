@@ -121,6 +121,8 @@ Make sure you are in the top folder for your site and run the following commands
 
 	$ git commit -m "description"
 
+	$ git remote add origin https://github.com/mrutherford41/jekyll-garden.git
+
 	$ git push origin gh-pages
 
 
